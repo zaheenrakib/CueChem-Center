@@ -1,14 +1,14 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Footer from '../components/Home/Footer/Footer';
 import AwesomeNav from '../components/Head/AwesomeNav';
+import Footer from '../components/Shared/Footer';
 
 const Main = () => {
     return (
         <>
             <AwesomeNav></AwesomeNav>
             <Outlet></Outlet>
-            {/* <Footer></Footer> */}
+            <Footer />
         </>
     );
 };

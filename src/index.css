@@ -4,8 +4,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 .prata-regular {
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.partner-logo-slider {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.partner-logo {
+  height: 100px; /* Adjust height as needed */
+  margin-right: 20px;
+  object-fit: contain; /* Maintain aspect ratio */
+  flex-shrink: 0; /* Prevent logos from shrinking */
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.flicking-camera {
+  display: flex;
+  width: 100%; /* Ensure the camera takes up full width */
+}
+.carousel-style {
+  height: 90vh !important;
+}
