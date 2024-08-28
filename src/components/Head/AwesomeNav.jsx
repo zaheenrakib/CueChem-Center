@@ -2,14 +2,14 @@ import React from 'react';
 import { Nav, Navbar } from 'rsuite';
 import { Link } from 'react-router-dom';
 import 'rsuite/dist/rsuite.min.css';
+import logo from '/weblogos.png'
 const AwesomeNav = () => {
     return (
         <>
-            <Navbar appearance='inverse' className={`prata-regular`}>
+            <Navbar appearance='' className={`prata-regular`}>
                 <Navbar.Brand as={Link} to="/">
                     <div className='flex justify-center items-center gap-5 h-10'>
-                        {/* <img src={logo1} alt="logo" className='w-40 h-16' /> */}
-                        <h1 className='text-xl'>CUECHEM</h1>
+                        <img src={logo} alt="logo" className='w-50 h-16' />
                     </div>
                 </Navbar.Brand>
                 <Navbar.Brand >
@@ -19,22 +19,22 @@ const AwesomeNav = () => {
                         <Nav.Item eventKey="home" as={Link} to="/">
                             Home
                         </Nav.Item>
-                        <Nav.Item eventKey="classes" as={Link} to="/all-classes">
+                        <Nav.Item eventKey="markets" as={Link} to="/markets">
                         Markets & solutions
                         </Nav.Item>
-                        <Nav.Item eventKey="learnstream" as={Link} to="/learnstream">
+                        <Nav.Item eventKey="innovation" as={Link} to="/innovation">
                         Innovation
                         </Nav.Item>
-                        <Nav.Item eventKey="home" as={Link} to="/">
+                        <Nav.Item eventKey="/product" as={Link} to="/product">
                         Product Portfolio
                         </Nav.Item>
-                        <Nav.Item eventKey="home" as={Link} to="/">
+                        <Nav.Item eventKey="sustainability" as={Link} to="/sustainability">
                         Sustainability
                         </Nav.Item>
-                        <Nav.Item eventKey="classes" as={Link} to="/all-classes">
+                        <Nav.Item eventKey="classes" as={Link} to="/contact">
                           Contact Us
                         </Nav.Item>
-                        <Nav.Item eventKey="learnstream" as={Link} to="/learnstream">
+                        <Nav.Item eventKey="learnstream" as={Link} to="/news">
                            News
                         </Nav.Item>
                     </Nav>
